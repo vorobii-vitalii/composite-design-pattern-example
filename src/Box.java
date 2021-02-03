@@ -4,11 +4,11 @@ import java.util.Collection;
 public class Box implements Worthy {
     private final Collection<Worthy> nestedItems = new ArrayList<>();
 
-    public void addProduct(Worthy item) {
+    public void addItem(Worthy item) {
         nestedItems.add(item);
     }
 
-    public void addProducts(Collection<Worthy> items) {
+    public void addItems(Collection<Worthy> items) {
         nestedItems.addAll(items);
     }
 
